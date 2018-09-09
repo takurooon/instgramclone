@@ -1,0 +1,8 @@
+<% if @favorite_pictures.present? %>
+
+  <% @favorite_picutures.each do |t| %>
+      <p>写真：<%= image_tag t.picture.image %></p>
+      <p>内容：<%= t.picture.content %></p>
+  <% end %>
+  
+<% end %>
